@@ -19,8 +19,8 @@
       "reminder": false
     },
     {
-      "text": "Go get food for dinner ",
-      "day": "Today 2:30PM",
+      "text": "Cook Dinner",
+      "day": "Today, 6:00PM",
       "reminder": true,
       "id": 4
     }
