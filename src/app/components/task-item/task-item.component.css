@@ -9,7 +9,7 @@
 }
 
 .task.reminder {
-    border-left: 5px solid #f00;
+    border-left: 5px solid green;
 }
 
 .task h3 {
