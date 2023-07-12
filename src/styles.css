@@ -9,16 +9,25 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-image: url('assets/view_background.png');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 .container {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 200px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 1px solid green;
   padding: 30px;
   border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .btn {
   display: inline-block;
@@ -43,6 +52,7 @@ body {
 .btn-block {
   display: block;
   width: 100%;
+  border: 1px solid green;
 }
 
 .form-control {
