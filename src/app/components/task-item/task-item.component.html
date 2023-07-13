@@ -1,14 +1,22 @@
 <div 
 class="task" 
-[ngClass]="{reminder: task.reminder }"
+[ngClass]="{reminder: task.reminder, complete: task.complete}"
 (dblclick)="onToggle(task)"
 >
     <h3>
         {{task.text}}
-        <fa-icon 
-        (click)="onDelete(task)"
-        [ngStyle]="{'color': 'red'}" 
-        [icon]="faTimes"></fa-icon>
+        <div class="icon-tab">
+            <fa-icon 
+                (click)="onComplete(task)"
+                [ngStyle]="{'color': 'green'}" 
+                [icon]="this.task.complete ? faRotateRight : faCheck">
+            </fa-icon>
+            <fa-icon 
+                (click)="onDelete(task)"
+                [ngStyle]="{'color': 'red'}" 
+                [icon]="faTimes">
+            </fa-icon>
+        </div>
     </h3>
     <p>{{task.day}}</p>
 </div>

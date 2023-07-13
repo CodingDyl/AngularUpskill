@@ -11,10 +11,6 @@ export class TasksComponent implements OnInit {
   tasks: Task[] = [];
   constructor(private taskService: TaskService) {};
   ngOnInit() {
-    //not used as an obersevable
-    //this.tasks = this.taskService.getTasks();
-
-    //if an observable is used
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
   }
 
@@ -30,6 +26,13 @@ export class TasksComponent implements OnInit {
     task.reminder = !task.reminder;
     this.taskService
     .updateTaskReminder(task).subscribe();
+  }
+
+  toggleComplete(task: Task) {
+    task.complete = !task.complete;
+    this.taskService
+    .updateComplete(task)
+    .subscribe();
   }
 
   addTask(task: Task) {

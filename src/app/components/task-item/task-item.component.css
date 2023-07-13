@@ -8,12 +8,28 @@
     transition: all 0.3s ease-in-out;
 }
 
+.task:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+}
+
 .task.reminder {
     border-left: 5px solid green;
+}
+
+.task.complete {
+    text-decoration: line-through;
 }
 
 .task h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.icon-tab {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
 }
