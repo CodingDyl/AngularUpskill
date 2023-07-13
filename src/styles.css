@@ -11,7 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: url('assets/view_background.png');
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
 }
 
@@ -21,7 +21,7 @@ body::-webkit-scrollbar{
 
 .container {
   max-width: 500px;
-  margin: 200px auto;
+  margin: 75px auto;
   overflow: auto;
   min-height: 300px;
   border: 1px solid green;
