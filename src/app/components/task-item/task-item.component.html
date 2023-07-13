@@ -7,6 +7,11 @@ class="task"
         {{task.text}}
         <div class="icon-tab">
             <fa-icon 
+                (click)="onToggle(task)"
+                [ngStyle]="{'color': 'grey'}" 
+                [icon]="this.task.reminder ? faBellSlash : faBell">
+            </fa-icon>
+            <fa-icon 
                 (click)="onComplete(task)"
                 [ngStyle]="{'color': 'green'}" 
                 [icon]="this.task.complete ? faRotateRight : faCheck">

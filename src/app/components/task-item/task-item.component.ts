@@ -3,6 +3,8 @@ import {Task} from '../../Task';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
+import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { faBellSlash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-task-item',
@@ -15,6 +17,8 @@ export class TaskItemComponent implements OnInit {
   faTimes = faTimes;
   faCheck = faCheck;
   faRotateRight = faRotateRight;
+  faBell = faBell;
+  faBellSlash = faBellSlash;
   @Output() onToggleReminder: EventEmitter<Task> = new EventEmitter();
   @Output() onCompleteTask: EventEmitter<Task> = new EventEmitter();
   ngOnInit() {}
