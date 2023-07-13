@@ -1,6 +1,10 @@
 <app-add-task (onAddTask)="addTask($event)"></app-add-task>
 <app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)" (onToggleReminder)="toggleReminder(task)" (onCompleteTask)="toggleComplete(task)"></app-task-item>
-<div class="total">
-    <h3>Total Tasks Completed: </h3>
-    <h1>{{tasksComplete}}</h1>
+<div class="total-con">
+    <div class="total">
+        <h3>Total Tasks Completed: </h3>
+        <h1>{{tasksComplete}}</h1>
+    </div>
+    <button class="{{tasksComplete ? 'btn btn-block' : 'hide'}}"  (click)="deleteCompletedTasks()">Delete Completed Tasks</button>
 </div>
+

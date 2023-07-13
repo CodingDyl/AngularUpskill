@@ -55,4 +55,12 @@ export class TasksComponent implements OnInit {
     .addTask(task)
     .subscribe((task) => (this.tasks.push(task)));
   }
+
+  deleteCompletedTasks(): void {
+    for (let index = 0; index < this.tasks.length; index++) {
+      if (this.tasks[index].complete == true) {
+        this.deleteTask(this.tasks[index]);
+      }
+    }
+  }
 }
