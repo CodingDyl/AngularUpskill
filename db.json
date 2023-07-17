@@ -1,13 +1,6 @@
 {
   "tasks": [
     {
-      "text": "Boxing: Bag Session",
-      "day": "Today, 18:00pm",
-      "reminder": true,
-      "complete": false,
-      "id": 5
-    },
-    {
       "text": "Read for 20 min",
       "day": "Today at 19:00pm",
       "reminder": false,
@@ -15,11 +8,18 @@
       "id": 6
     },
     {
-      "text": "Call mom",
-      "day": "Today at 22:00pm",
+      "text": "Complete EBTO-4389",
+      "day": "14th of July at 17:00pm",
+      "reminder": false,
+      "complete": false,
+      "id": 8
+    },
+    {
+      "text": "Have Fun",
+      "day": "Yay",
       "reminder": true,
       "complete": false,
-      "id": 7
+      "id": 9
     }
   ]
 }

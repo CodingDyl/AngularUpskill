@@ -18,6 +18,7 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppbarComponent } from './components/appbar/appbar.component';
+import { LottieComponent } from './components/lottie/lottie.component';
 
 const appRoutes: Routes = [
   { path: '', component: TasksComponent },
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
         AddTaskComponent,
         AboutComponent,
         FooterComponent,
-        AppbarComponent
+        AppbarComponent,
+        LottieComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
