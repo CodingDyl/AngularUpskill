@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-appbar',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./appbar.component.css'],
 })
 export class AppbarComponent {
+  @ViewChild('clickHoverMenuTrigger') clickHoverMenuTrigger!: MatMenuTrigger;
 
+  openOnMouseOver() {
+    this.clickHoverMenuTrigger.openMenu();
+  }
+
+  closeOnMouseOver() {
+    this.clickHoverMenuTrigger.closeMenu();
+  }
 }

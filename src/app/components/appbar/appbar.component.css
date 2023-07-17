@@ -9,3 +9,10 @@
     background-color: black;
     color: white;
   }
+
+  .matMenuD {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    padding: 2rem;
+    border: 2px solid green !important;
+    color: white !important;
+  }
