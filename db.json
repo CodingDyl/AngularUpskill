@@ -17,7 +17,7 @@
     {
       "text": "Have Fun",
       "day": "Yay",
-      "reminder": true,
+      "reminder": false,
       "complete": false,
       "id": 9
     }
